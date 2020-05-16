@@ -1,0 +1,16 @@
+title: kaspersky
+description: пробное написание сайта
+template:
+  repo: kaspersky-template
+  name: kaspersky
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
